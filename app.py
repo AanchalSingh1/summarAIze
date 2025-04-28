@@ -260,8 +260,3 @@ if trigger and video_url:
     frames = extract_scene_frames(video_file)
     for f in frames[:10]:
         st.image(f, width=350)
-
-# Ngrok Tunnel
-ngrok.kill()
-public_url = ngrok.connect(8501)
-print("🌐 Streamlit app URL:", public_url)
